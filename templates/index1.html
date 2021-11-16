@@ -1,0 +1,20 @@
+<!--
+6) Add subheaders and more text
+-->
+<!DOCTYPE html>
+<html lang="en-ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Мой html</title>
+  </head>
+  <body>
+    <h1>FROMS</h1>
+    <a href="{% url 'about' %}">Click here</a>
+    <form action="{% url 'result' %}" >
+      {% csrf_token %}
+      <input type="text" name="user_input">
+      <input type="submit" value="Click me">
+    </form>
+  </body>
+</html>
+

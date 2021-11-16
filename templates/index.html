@@ -1,0 +1,21 @@
+<!--
+6) Add subheaders and more text
+-->
+<!DOCTYPE html>
+<html lang="en-ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Мой html</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+  </head>
+  <body>
+    <h1>This is first page</h1>
+    <button onclick="buttonFunc()">Click me</button>
+    <br>
+    <img src="{% static 'elephant.jpg' %}" alt="" width="300">
+    <script type="text/javascript" src="{% static '1234.js' %}"></script>
+
+  </body>
+</html>
+
